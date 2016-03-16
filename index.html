@@ -10,20 +10,6 @@
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no maximum-scale=1.0, minimum-scale=1.0"/>
-		
-		<!--google maps;-->
-			<script src="http://maps.googleapis.com/maps/api/js"></script>
-			<script>
-			function initialize() {
-			  var mapProp = {
-			    center:new google.maps.LatLng(51.508742,-0.120850),
-			    zoom:5,
-			    mapTypeId:google.maps.MapTypeId.ROADMAP
-			  };
-			  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-			</script>
 
 		<!--iconos materialize;-->
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,33 +25,61 @@
 		      </a>
 		      <ul class="right hide-on-med-and-down">
 		        <li>
-		        	<a href="#!" class="dropdown-button" data-activates="dropdown" data-beloworigin="true">Tu cuenta <i class="mdi-navigation-arrow-drop-down right"></i></a>
+		        	<a href="#!" class="dropdown-button grey-text text-lighten-2" data-activates="dropdown" data-beloworigin="true">Tu cuenta <i class="mdi-navigation-arrow-drop-down right"></i></a>
 	        	</li>
 		      </ul>
 		    </div>
+		     <!-- Dropdown Structure -->
+			  <ul id="dropdown" class="dropdown-content collection">
+			  		<li class="collection-item avatar  grey darken-3">
+			  				<img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
+			  				<span class="title grey-text text-lighten-2">Name</span>
+			  				<p>First Line</p>
+			  				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
+			  		</li>
+			  </ul>
 		  </nav>
 
-		  <!-- Dropdown Structure -->
-		  <ul id="dropdown" class="dropdown-content collection">
-		  		<li class="collection-item avatar">
-		  				<img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
-		  				<span class="title">Name</span>
-		  				<p>First Line</p>
-		  				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
-		  		</li>
-		  		<li class="collection-item avatar">
-		  				<img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
-		  				<span class="title">Name</span>
-		  				<p>First Line</p>
-		  				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
-		  		</li>
-		  		<li class="collection-item avatar">
-		  				<img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
-		  				<span class="title">Name</span>
-		  				<p>First Line</p>
-		  				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
-		  		</li>
-		  </ul>
+		<main>
+			<div class="row">
+				<div class="col s12 nopadding">
+			  		<div id="map"></div>
+			  </div>
+			</div>
+		</main>
+
+		<footer class="page-footer">
+            <div class="row">
+              <div class="col s12">
+              	<ul class="left">
+              		<li>
+		                 <a href="#!" class="dropdown-button grey-text text-lighten-2" data-activates="dropdown" data-beloworigin="true">Mis juegos
+              			 </a>
+	                </li>
+                </ul>
+              	<ul class="right">
+              		<li>
+		                <a href="#!" class="dropdown-button btn btn-floating waves-effect" data-activates="dropdown" data-beloworigin="true">
+		                <i class="mdi-account-multiple"></i>
+              			 </a>
+	                </li>
+              		<li>
+		                <a href="#!" class="dropdown-button btn btn-floating waves-effect" data-activates="dropdown" data-beloworigin="true">
+		                <i class="mdi-account-multiple"></i>
+              			 </a>
+	                </li>
+                </ul>
+              </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
 
 
 		<script type="text/javascript" src="js/scripts.js"></script>
@@ -82,13 +96,26 @@
       		      outDuration: 225,
       		      hover: true, // Activate on hover
       		      belowOrigin: true, // Displays dropdown below the button
-      		      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+      		      alignment: 'right' // Displays dropdown with edge aligned to the left of button
       		    }
       		  );
-
       				}); // End Document Ready
       		})(jQuery); // End of jQuery name space
       	</script>
+
+      	<!--maps-->
+      	<script>
+	      function initMap() {
+	        var mapDiv = document.getElementById('map');
+	        var map = new google.maps.Map(mapDiv, {
+	          center: {lat: 44.540, lng: -78.546},
+	          zoom: 8
+	        });
+	      }
+	    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+
 
 
 
