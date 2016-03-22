@@ -19,6 +19,7 @@
 
 footer {
   margin:0px!important;
+  padding-top: 5px!important;
 }
 
 
@@ -50,3 +51,27 @@ body {
 main {
   flex:1 0 auto;
 }
+
+.marginbottom10 {
+  margin-bottom: 5px;
+}
+
+.botonesfooter {
+  width: 45px!important;
+  height: 45px!important;
+}
+
+.centeredIcons {
+      line-height: 43px!important;
+}
+
+.defaultInput {
+    margin-bottom: 0px!important;
+    background: white!important;
+    height: 28px!important;
+    margin-top: 8px!important;
+    border-radius: 14px!important;
+    width: 242px!important;
+    padding: 0px 40px 0px 40px!important;
+  }
+

@@ -1,127 +1,126 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title> 
-			LFM
-		</title>
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no maximum-scale=1.0, minimum-scale=1.0"/>
-
-		<!--iconos materialize;-->
-			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<title> 
+		LFM
+	</title>
 
 
-	</head>
+	<link href="http://fonts.googleapis.com/
+	icon?family=Material+Icons" rel="stylesheet"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-	<body>
-		  <nav>
-		    <div class="nav-wrapper grey darken-4">
-		      <a href="#!">
-		      	<img  class="brand-logo" src="logo/logo-pagina1.png">
-		      </a>
-		      <ul class="right hide-on-med-and-down">
-		        <li>
-		        	<a href="#!" class="dropdown-button grey-text text-lighten-2" data-activates="dropdown" data-beloworigin="true">Tu cuenta <i class="mdi-navigation-arrow-drop-down right"></i></a>
-	        	</li>
-		      </ul>
-		    </div>
-		     <!-- Dropdown Structure -->
-			  <ul id="dropdown" class="dropdown-content collection">
-			  		<li class="collection-item avatar  grey darken-3">
-			  				<img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
-			  				<span class="title grey-text text-lighten-2">Name</span>
-			  				<p>First Line</p>
-			  				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
-			  		</li>
-			  </ul>
-		  </nav>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
 
-		<main>
-			<div class="row">
-				<div class="col s12 nopadding">
-			  		<div id="map"></div>
-			  </div>
+<body>
+	<nav>
+		<div class="nav-wrapper grey darken-4">
+			<a href="#!">
+				<img  class="brand-logo" src="logo/logo-pagina1.png">
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<a href="#!" class="dropdown-button grey-text text-lighten-2" data-activates="dropdown" data-beloworigin="true">Tu cuenta <i class="mdi-navigation-arrow-drop-down right"></i></a>
+				</li>
+			</ul>
+		</div>
+		<!-- Dropdown Structure -->
+		<ul id="dropdown" class="dropdown-content collection">
+			<li class="collection-item avatar  grey darken-3">
+				<img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
+				<span class="title grey-text text-lighten-2">Name</span>
+				<p>First Line</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
+			</li>
+		</ul> 
+	</nav>
+
+	<main>
+		<div class="row">
+			<div class="col s12 nopadding">
+				<div id="map"></div>
 			</div>
-		</main>
+		</div>
+	</main>
 
-		<footer class="page-footer">
-            <div class="row">
-              <div class="col s12">
-              	<ul class="left">
-              		<li>
-		                 <a href="#!" class="dropdown-button grey-text text-lighten-2" data-activates="dropdown" data-beloworigin="true">Mis juegos
-              			 </a>
-	                </li>
-                </ul>
-              	<ul class="right">
-              		<li>
-		                <a href="#!" class="dropdown-button btn btn-floating waves-effect" data-activates="dropdown" data-beloworigin="true">
-		                <i class="mdi-account-multiple"></i>
-              			 </a>
-	                </li>
-              		<li>
-		                <a href="#!" class="dropdown-button btn btn-floating waves-effect" data-activates="dropdown" data-beloworigin="true">
-		                <i class="mdi-account-multiple"></i>
-              			 </a>
-	                </li>
-                </ul>
-              </div>
-            </div>
-        </footer>
+	<footer class="page-footer grey darken-4">
+		<div class="row marginbottom10">
+			<div class="col s1 center">
+				<a href="#!" class="dropdown-button grey-text text-lighten-2" data-activates="dropdown" data-beloworigin="true">Mis juegos
+				</a>
+			</div>
+			<div class="col s1 center">
+				<a href="#!" class="dropdown-button grey-text text-lighten-2" data-activates="dropdown" data-beloworigin="true">Juegos
+				</a>
+			</div>
+			<div class="col s4 offset-s2 center">
+				<input class= "defaultInput" type="text" name="busquedaJuegos">
+			</div>
+			<div class="col s1 offset-s2 center">
+				<a href="#!" class="dropdown-button btn btn-floating waves-effect botonesfooter grey lighten-2">
+					<i class="material-icons centeredIcons grey-text text-darken-4">chat_bubble_outline</i>
+				</a>
+			</div>
+			<div class="col s1 center">
+				<a href="#!" class="dropdown-button btn btn-floating waves-effect botonesfooter grey lighten-2">
+					<i class="material-icons centeredIcons grey-text text-darken-4">person_outline</i>
+				</a>
+			</div>
 
-
-
-
+		</footer>
 
 
 
 
 
+
+
+
+		<script src="http://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
 
 		<script type="text/javascript" src="js/scripts.js"></script>
 		<script src="js/jquery.js"></script>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      	<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 
-      	<script>
-      		(function($) {
-      				$(function() {
+		<script>
+			(function($) {
+				$(function() {
 
-      		$('.dropdown-button').dropdown({
-      		      inDuration: 300,
-      		      outDuration: 225,
-      		      hover: true, // Activate on hover
-      		      belowOrigin: true, // Displays dropdown below the button
-      		      alignment: 'right' // Displays dropdown with edge aligned to the left of button
-      		    }
-      		  );
-      				}); // End Document Ready
-      		})(jQuery); // End of jQuery name space
-      	</script>
+					$('.dropdown-button').dropdown({
+						inDuration: 300,
+						outDuration: 225,
+	hover: true, // Activate on hover
+	belowOrigin: true, // Displays dropdown below the button
+	alignment: 'right' // Displays dropdown with edge aligned to the left of button
+}
+);
+	}); // End Document Ready
+	})(jQuery); // End of jQuery name space
+</script>
 
-      	<!--maps-->
-      	<script>
-	      function initMap() {
-	        var mapDiv = document.getElementById('map');
-	        var map = new google.maps.Map(mapDiv, {
-	          center: {lat: 44.540, lng: -78.546},
-	          zoom: 8
-	        });
-	      }
-	    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-
+<!--maps-->
+<script>
+	function initMap() {
+		var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+			center: {lat: 44.540, lng: -78.546},
+			zoom: 8
+		});
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 
 
 
 
+<script src="http://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
 
 
-	</body>
+</body>
 
 </html>
