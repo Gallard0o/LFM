@@ -57,8 +57,21 @@ main {
 
 #map {
   display: flex;
-   min-height: 82vh;
+   min-height: 82.1vh;
+   position: relative;
+   z-index: 0
 }
+
+.over {
+  background: rgba(66, 66, 66, 0.33);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 20%;
+}
+
 
 .marginbottom10 {
   margin-bottom: 5px;
@@ -81,5 +94,14 @@ main {
     border-radius: 14px!important;
     width: 242px!important;
     padding: 0px 40px 0px 40px!important;
+  }
+
+  .menus {
+    margin-top: 3px;
+  }
+
+  #modal1 {
+    margin-bottom: 56px;
+    width: 300px;
   }
 
