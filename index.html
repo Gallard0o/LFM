@@ -13,6 +13,8 @@
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
+	<link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no maximum-scale=1.0, minimum-scale=1.0"/>
 </head>
 
@@ -41,8 +43,34 @@
 
 	<main>
 		<div>
-		<div class="over">
-			<p>Hola!</p>
+		<div class="over z-depth-3">
+			<div class="gallery js-flickity">
+			  <div class= "game">
+				  <a href="#!" class="btn btn-floating waves-effect waves-orange materialize-trangrey addButton">
+				  	<i class="material-icons darkorange">add</i>
+				  </a>
+			  		<a href="#!"><img class="responsive-img" src="img/logo-lol-smaller2.png"></a>
+			  		<p class="gamerNum grey-text text-lighten-2">3,524,215 jugando</p>
+			  </div>
+			  <div class= "game">
+				  <a href="#!" class="btn btn-floating waves-effect waves-orange materialize-trangrey addButton">
+				  	<i class="material-icons darkorange">add</i>
+				  </a>
+				  	<a href="#!"><img class="responsive-img" src="img/WoWlogo1.png"></a>
+				  	<p class="gamerNum grey-text text-lighten-2">3,524,215 jugando</p>
+			  </div>
+			  <div class= "game">
+				  <a href="#!" class="btn btn-floating waves-effect waves-orange materialize-trangrey addButton">
+				  	<i class="material-icons darkorange">add</i>
+				  </a>
+				  	<a href="#!"><img class="responsive-img" src="img/tf2_logo2.png"></a>
+				  	<p class="gamerNum grey-text text-lighten-2">3,524,215 jugando</p>
+			  </div>
+			  <div class="gallery-cell"></div>
+			  <div class="gallery-cell"></div>
+			  <div class="gallery-cell"></div>
+			  <div class="gallery-cell"></div>
+			</div>
 		</div>
 			<div id="map"></div>
 		</div>
@@ -166,6 +194,8 @@
 	    $('.modal-trigger').leanModal();
 	  });
 </script>
+
+<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
 
 
 </body>
