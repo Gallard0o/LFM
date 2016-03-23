@@ -40,11 +40,7 @@
 	</nav>
 
 	<main>
-		<div class="row">
-			<div class="col s12 nopadding">
 				<div id="map"></div>
-			</div>
-		</div>
 	</main>
 
 	<footer class="page-footer grey darken-4">
@@ -58,15 +54,15 @@
 				</a>
 			</div>
 			<div class="col s4 offset-s2 center">
-				<input class= "defaultInput" type="text" name="busquedaJuegos">
+				<input class= "defaultInput" type="search" name="busquedaJuegos">
 			</div>
 			<div class="col s1 offset-s2 center">
-				<a href="#!" class="dropdown-button btn btn-floating waves-effect botonesfooter grey lighten-2">
+				<a href="#!" class="dropdown-button btn btn-floating waves-effect waves-orange botonesfooter grey lighten-2">
 					<i class="material-icons centeredIcons grey-text text-darken-4">chat_bubble_outline</i>
 				</a>
 			</div>
 			<div class="col s1 center">
-				<a href="#!" class="dropdown-button btn btn-floating waves-effect botonesfooter grey lighten-2">
+				<a href="#!" class="dropdown-button btn btn-floating waves-effect waves-orange botonesfooter grey lighten-2">
 					<i class="material-icons centeredIcons grey-text text-darken-4">person_outline</i>
 				</a>
 			</div>
@@ -109,7 +105,10 @@
 		var mapDiv = document.getElementById('map');
 		var map = new google.maps.Map(mapDiv, {
 			center: {lat: 44.540, lng: -78.546},
-			zoom: 8
+			zoom: 8,
+			mapTypeControl: false,
+			scaleControl: true,
+   		    zoomControl: false,
 		});
 	}
 </script>

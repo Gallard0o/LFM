@@ -44,12 +44,20 @@ footer {
 
 body {
   display: flex;
+  display: -webkit-flex;
   min-height: 100vh;
   flex-direction: column;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 
 main {
   flex:1 0 auto;
+}
+
+#map {
+  display: flex;
+   min-height: 82vh;
 }
 
 .marginbottom10 {
